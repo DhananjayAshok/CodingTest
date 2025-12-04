@@ -1,5 +1,5 @@
 [project]
-name = "tests"
+name = "coding_tests"
 version = "0.1.0"
 description = "Simple Coding Tests"
 readme = "README.md"
