@@ -3,8 +3,8 @@ import numpy as np
 from datasets import load_dataset
 
 class Question1:
-    df = load_dataset("DJ-Research/codingtest", subset="question1", split="df").to_pandas()    
-    other_df = load_dataset("DJ-Research/codingtest", subset="question1", split="other_df").to_pandas()
+    df = load_dataset("DJ-Research/codingtest", "question1", split="df").to_pandas()    
+    other_df = load_dataset("DJ-Research/codingtest", "question1", split="other_df").to_pandas()
 
     @staticmethod
     def random_numbers(x):
@@ -21,6 +21,9 @@ class Question1:
         if x <= 10:
             raise ValueError("Input must be a positive integer greater than 10")
         return np.random.randint(x)
+    
+class Question2:
+    df = load_dataset("DJ-Research/codingtest", "question2", split="df").to_pandas()
     
 
 
