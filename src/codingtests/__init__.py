@@ -25,6 +25,7 @@ class Question1:
 class Question2:
     df = load_dataset("DJ-Research/codingtest", "question2", split="df").to_pandas()
     inference_df = df.loc[:5]
+    max_new_tokens = 5
     
 
 
